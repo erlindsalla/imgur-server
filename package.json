@@ -7,7 +7,7 @@
     "start:DEV": "cross-env NODE_ENV=development && nodemon --ext ts --exec ts-node src/app.ts",
     "start": "npm run start:DEV",
     "begin": "ts-node src/app.ts",
-    "build": "tsc && mkdir -p public && cp -R src/public/* public/"
+    "build": "rimraf dist && tsc"
   },
   "keywords": [],
   "author": "",
