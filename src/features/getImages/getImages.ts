@@ -3,7 +3,7 @@ import * as request from "request";
 
 export const getImages = (req: Request, res: Response) => {
   const { showViral, section, sort, window, page } = req.body;
-  console.log(req.body);
+  console.log("=====>", req.body);
   /*
         section	:	hot | top | user. Defaults to hot
         sort	:	viral | top | time | rising (only available with user section). Defaults to viral
