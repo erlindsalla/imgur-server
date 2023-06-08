@@ -9,7 +9,7 @@
     "begin": "ts-node src/app.ts",
     "build": "rimraf dist && tsc",
     "ts.check": "tsc --project tsconfig.json",
-    "add-build": "git add dist"
+    "add-build": "if [ -d dist ]; then git add dist; fi"
   },
   "keywords": [],
   "author": "",
